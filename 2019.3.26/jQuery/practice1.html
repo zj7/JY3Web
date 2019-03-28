@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>练习1</title>
+		
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>什么是jQuery？</h1>
+		<div>
+			<h4>解答：</h4>
+			<p>jQuery是……</p>
+		</div>
+		<script>
+			$("div").css({"width":"300px","height":"200px","border":"1px dashed black","display":"none"})
+			$(function(){
+				$("h1").click(function(){
+					$("div").toggle()
+				})
+			})
+		</script>
+	</body>
+</html>
