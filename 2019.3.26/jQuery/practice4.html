@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>特定表格隔行变色</title>
+		
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<table id="table1">
+			<tr>
+				<td>第一行</td>
+				<td>第一行</td>
+			</tr>
+			<tr>
+				<td>第二行</td>
+				<td>第二行</td>
+			</tr>
+			<tr>
+				<td>第三行</td>
+				<td>第三行</td>
+			</tr>
+			<tr>
+				<td>第四行</td>
+				<td>第四行</td>
+			</tr>
+			<tr>
+				<td>第五行</td>
+				<td>第五行</td>
+			</tr>
+			<tr>
+				<td>第六行</td>
+				<td>第六行</td>
+			</tr>
+		</table>
+		<table id="table2">
+			
+		</table>
+		<script>
+			$(function(){
+				$("#table2").append("<tr><td>第一行</td><td>第一行</td></tr><tr><td>第二行</td><td>第二行</td></tr><tr><td>第三行</td><td>第三行</td></tr><tr><td>第四行</td><td>第四行</td></tr><tr><td>第五行</td><td>第五行</td></tr><tr><td>第六行</td><td>第六行</td></tr>") ;
+				$("#table1 tr:even").css("background-color","red")
+			})
+		</script>
+	</body>
+</html>
