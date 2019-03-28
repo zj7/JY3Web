@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>唱片</title>
+		<style>
+			@-webkit-keyframes cd{
+				0%{
+					transform: rotate(0deg);
+				}
+				25%{
+					transform: rotate(90deg);
+				}
+				50%{
+					transform: rotate(180deg);
+				}
+				75%{
+					transform: rotate(270deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			#container{
+				width: 300px;
+				height: 300px;
+				border: 2px solid black;
+				border-radius: 50%;
+				background-color: lightcoral;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+				font-size: 20px;
+				position: relative;
+				-webkit-animation:cd 5s linear infinite;
+			}
+			#subcontainer{
+				width: 50px;
+				height: 50px;
+				border: 2px solid black;
+				border-radius: 50%;
+				background-color: white;
+				position: absolute;
+				top: 124px;
+				left: 124px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			一张过去的CD
+			<div id="subcontainer"></div>
+		</div>
+	</body>
+</html>
