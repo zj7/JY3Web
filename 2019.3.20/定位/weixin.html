@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>微信</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+			}
+			#containertop{
+				width: 100%;
+				height: 60px;
+				background-color: black;
+				text-align: center;
+				color: white;
+				font-size: 20px;
+				line-height: 200%;
+			}
+			#containerbottom{
+				width: 100%;
+				height: 60px;
+				position: absolute;
+				bottom: 0;
+			}
+			.subdiv{
+				width: 25%;
+				height: 60px;
+				float: left;
+				text-align: center;
+				position: relative;
+			}
+			.subdiv img{
+				width: 50%;
+				height: 50%;
+			}
+			span{
+				display: block;
+			}
+			.message{
+				width: 15px;
+				height: 15px;
+				background-color: red;
+				border-radius: 50%;
+				position: absolute;
+				left: 56%;
+			}
+			.message span{
+				font-size: 10px;
+				color: white;
+			}
+			#container{
+				width: 100%;
+				height: 80%;
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+			}
+			.chat{
+				width: 100%;
+				height: 80px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="containertop">微信</div>
+		<div id="container">
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+			<div class="chat"></div>
+		</div>
+		<div id="containerbottom">
+			<div class="subdiv">
+				<div class="message">
+					<span>7</span>
+				</div>
+				<img src="../img/微信.svg" />
+				<span>微信</span>
+			</div>
+			<div class="subdiv">
+				<div class="message">
+					<span>5</span>
+				</div>
+				<img src="../img/通讯录.svg" />
+				<span>通讯录</span>
+			</div>
+			<div class="subdiv">
+				<div class="message">
+					<span>3</span>
+				</div>
+				<img src="../img/发现.svg" />
+				<span>发现</span>
+			</div>
+			<div class="subdiv">
+				<div class="message">
+					<span>1</span>
+				</div>
+				<img src="../img/我.svg" />
+				<span>我</span>
+			</div>
+		</div>
+	</body>
+</html>
