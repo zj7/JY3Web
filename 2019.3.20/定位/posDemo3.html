@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类显示详情</title>
+		<style>
+			div{
+				float: left;
+			}
+			#container1{
+				width: 200px;
+				height: 600px;
+				background-color: cyan;
+			}
+			#content{
+				width: 900px;
+				height: 600px;
+				display: none;
+				background-color: darkorange;
+			}
+			ul{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			#container1:hover + #content{
+				display: block;
+			}
+			#content:hover{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container1">
+			<ul>
+				<li><a href="#">家用电器</a></li>
+				<li><a href="#">手机</a></li>
+				<li><a href="#">电脑</a></li>
+				<li><a href="#">家居</a></li>
+				<li><a href="#">男装</a></li>
+				<li><a href="#">美妆</a></li>
+			</ul>
+		</div>
+		<div id="content"></div>
+	</body>
+</html>
