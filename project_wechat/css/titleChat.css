@@ -1,0 +1,21 @@
+#titleChat{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+#titleChat img:nth-child(1){
+	margin-left: 10px;
+	flex: 0.1;
+}
+#titleChat span{
+	margin-left: 10px;
+	flex: 0.9;
+}
+/*#titleChat img:nth-child(2){
+	
+}*/
+a{
+	text-decoration: none;
+}
