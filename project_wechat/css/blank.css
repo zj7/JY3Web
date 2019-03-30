@@ -1,0 +1,7 @@
+#blank{
+	flex: 1;
+	height: 80%;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+}
