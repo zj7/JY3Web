@@ -1,0 +1,42 @@
+#menu{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	background-color: white;
+	/*z-index: 1;*/
+}
+.subdiv{
+	height: 60px;
+	/*text-align: center;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.subdiv img{
+	width: 50%;
+	height: 50%;
+}
+.subdiv span{
+	display: block;
+	color: #8A8A8A;
+}
+.message{
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 609px;
+	left: 51px;
+}
+.message span{
+	font-size: 10px;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
