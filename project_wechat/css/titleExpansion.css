@@ -1,0 +1,65 @@
+#titleExpansion{
+	width: 130px;
+	height: 240px;
+	background-color: black;
+	display: none;
+	position: absolute;
+	/*left: 245px;
+	top: 69px;*/
+	left: 66%;
+	top: 10%;
+}
+#titleEx1{
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#titleEx1 img,#titleEx1 span{
+	margin-left: 10px;
+}
+#titleEx2 img,#titleEx2 span{
+	margin-left: 10px;
+}
+#titleEx3 img,#titleEx3 span{
+	margin-left: 10px;
+}
+#titleEx4 img,#titleEx4 span{
+	margin-left: 10px;
+}
+#titleEx5 img,#titleEx5 span{
+	margin-left: 10px;
+}
+#titleEx2{
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#titleEx3{
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#titleEx4{
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#titleEx5{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
