@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>商品3</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/top1.css" />
+		<link rel="stylesheet" href="../css/top2.css"/>
+		<link rel="stylesheet" href="../css/expansion.css" />
+		
+		<style>
+			#back{
+				height: 40px;
+			}
+			#back img{
+				margin-left: 15px;
+			}
+			a:hover #img2{
+				transform: scale(1.3);
+			}
+			#information{
+				display: flex;
+			}
+			#leftinfo{
+				flex: 0.4;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#leftinfo img{
+				width: 160px;
+				height: 180px;
+			}
+			#rightinfo{
+				flex: 0.6;
+			}
+			hr{
+				height: 2px;
+				background-image:radial-gradient(130px,#FF3,red) ;
+				border: none;
+			}
+			#price{
+				color: #CC3300;
+				font-size: 22px;
+			}
+			#quantity{
+				display: flex;
+				height: 50px;
+				align-items: center;
+			}
+			#quantity span{
+				width: 20px;
+				display: flex;
+				justify-content: center;
+			}
+			.number{
+				width: 30px;
+				height: 30px;
+				border: 1px solid black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.number img{
+				width: 25px;
+				height: 25px;
+			}
+			#btn1{
+				width: 100px;
+				height: 40px;
+				border: none;
+				border-radius: 8px;
+				background-color: #F30;
+				color: white;
+				font-size: 20px;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+				text-align: center;
+				transition: all 1s;
+			}
+			#next{
+				height: 60px;
+				display: flex;
+				justify-content: flex-end;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="top1">
+			<a href="shop.html"><img id="logo" src="http://39.106.45.38/static/img/logo.7515715.svg" /></a>
+			<a id="shoucang2" href="collection.html">
+			<div id="shoucang">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E6%94%B6%E8%97%8F2.svg" />
+				<span>我的收藏</span>
+			</div>
+			</a>
+			<div id="gouwuche">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6.svg" />
+				<span>购物车</span>
+			</div>
+		</div>
+		<div id="top2">
+			<img id="img1" src="http://pp088bwpq.bkt.clouddn.com/%E8%8F%9C%E5%8D%95.svg"/>
+			<span>手机品牌</span>
+			<a href="register.html"><span>注册</span></a>
+			<a href="login.html"><span>登录</span></a>
+		</div>
+		<div id="expansion">
+			<div class="titleEx">
+				<span>小米手机</span>
+			</div>
+			<div class="titleEx">
+				<span>华为手机</span>
+			</div>
+			<div class="titleEx">
+				<span>VIVO手机</span>
+			</div>
+			<div class="titleEx">
+				<span>苹果手机</span>
+			</div>
+		</div>
+		<div id="back">
+			<a href="shop.html"><img id="img2" src="http://pp088bwpq.bkt.clouddn.com/zuojiantou.svg"/></a>
+		</div>
+		<div id="information">
+			<div id="leftinfo">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E8%8D%A3%E8%80%808X.jpg"/>
+			</div>
+			<div id="rightinfo">
+				<div>
+					<p><b>荣耀8X 91%屏占比 幻夜黑</b></p>
+					<p><b>4GB+64GB 4G网 双卡双待</b></p>
+					<hr />
+					<span id="price"><b>¥1399</b></span>
+				</div>
+				<div id="quantity">
+					<div class="number">
+						<img src="http://pp088bwpq.bkt.clouddn.com/jianhao.svg"/>
+					</div>
+					<span>1</span>
+					<div class="number">
+						<img src="http://pp088bwpq.bkt.clouddn.com/plus.svg"/>
+					</div>
+				</div>
+				<div>
+					<button id="btn1">我要剁手</button>
+				</div>
+			</div>
+		</div>
+		<div id="next">
+			<a href="detail4.html">
+				<span>不太满意？看看下一款！</span>
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E5%8F%B3%E7%AE%AD%E5%A4%B4.svg" />
+			</a>
+		</div>
+		<script>
+			$(function(){
+				$("#img1").click(function(){
+					$("#expansion").toggle()
+				})
+			})
+		</script>
+	</body>
+</html>
