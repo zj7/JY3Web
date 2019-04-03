@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>我的收藏</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/top1.css" />
+		<link rel="stylesheet" href="../css/top2.css" />
+		<link rel="stylesheet" href="../css/expansion.css" />
+		<style>
+			a{
+				text-decoration: none;
+				color: black;
+				text-align: center;
+			}
+			#back{
+				height: 40px;
+			}
+			#back img{
+				margin-left: 15px;
+			}
+			#collection{
+				width: 100%;
+				flex: 1;
+				overflow: scroll;
+			}
+			#collect1{
+				width: 100%;
+				height: 90px;
+				display: flex;
+				align-items: center;
+			}
+			#collect1 img{
+				width: 70px;
+				height: 75px;
+			}
+			#collect2{
+				width: 100%;
+				height: 90px;
+				display: flex;
+				align-items: center;
+			}
+			#collect2 img{
+				width: 70px;
+				height: 75px;
+			}
+			#buy , #delete , #delete2{
+				flex: 0.4;
+				height: 40px;
+				border: none;
+				border-radius: 13px;
+				background-color: #F30;
+				color: white;
+				font-size: 15px;
+				margin-right: 15px;
+			}
+		</style>
+		
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="top1">
+			<a href="shop.html"><img id="logo" src="http://39.106.45.38/static/img/logo.7515715.svg" /></a>
+			<a id="shoucang2" href="collection.html">
+			<div id="shoucang">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E6%94%B6%E8%97%8F2.svg" />
+				<span>我的收藏</span>
+			</div>
+			</a>
+			<div id="gouwuche">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6.svg" />
+				<span>购物车</span>
+			</div>
+		</div>
+		<div id="top2">
+			<img id="img1" src="http://pp088bwpq.bkt.clouddn.com/%E8%8F%9C%E5%8D%95.svg"/>
+			<span>手机品牌</span>
+			<a href="register.html"><span>注册</span></a>
+			<a href="login.html"><span>登录</span></a>
+		</div>
+		<div id="expansion">
+			<div class="titleEx">
+				<span>小米手机</span>
+			</div>
+			<div class="titleEx">
+				<span>华为手机</span>
+			</div>
+			<div class="titleEx">
+				<span>VIVO手机</span>
+			</div>
+			<div class="titleEx">
+				<span>苹果手机</span>
+			</div>
+		</div>
+		<div id="back">
+			<a href="shop.html"><img id="img2" src="http://pp088bwpq.bkt.clouddn.com/zuojiantou.svg"/></a>
+		</div>
+		<div id="collection">
+			<div id="collect1">
+				<a href="detail4.html"><img src="http://pp088bwpq.bkt.clouddn.com/iPhone%20XR.jpg" /></a>
+				<a href="detail4.html"><span><b>iPhoneXR (A2108)</b></span></a>
+				<button id="buy">买买买！</button>
+				<button id="delete">不要了！</button>
+			</div>
+			<div id="collect2">
+				<a href="detail4.html"><img src="http://pp088bwpq.bkt.clouddn.com/%E8%8D%A3%E8%80%808X.jpg" /></a>
+				<a href="detail4.html"><span><b>华为 荣耀8X</b></span></a>
+				<button id="buy">买买买！</button>
+				<button id="delete2">不要了！</button>
+			</div>
+		</div>
+		
+		<script>
+			$(function(){
+				$("#img1").click(function(){
+					$("#expansion").toggle()
+				})
+			})
+			$(function(){
+				$("#delete").click(function(){
+					$("#collect1").css("display","none")
+				})
+			})
+			$(function(){
+				$("#delete2").click(function(){
+					$("#collect2").css("display","none")
+				})
+			})
+			$(function(){
+				$("#buy").click(function(){
+					alert("你买不起^_^")
+				})
+			})
+		</script>
+	</body>
+</html>
