@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>抽奖</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/top1.css" />
+		<link rel="stylesheet" href="../css/top2.css" />
+		<link rel="stylesheet" href="../css/expansion.css" />
+		<style>
+			#back{
+				height: 40px;
+			}
+			#back img{
+				margin-left: 15px;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+				text-align: center;
+			}
+			#ticketwheel{
+				width: 100%;
+				height: 350px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			@-webkit-keyframes whirl{
+				0%{
+					transform: rotate(0deg);
+				}
+				50%{
+					transform: rotate(180deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			.circle{
+				animation: whirl 1s linear infinite;
+			}
+			#wheel{
+				width: 305px;
+				height: 305px;
+				/*animation: circle 1s linear infinite;*/
+			}
+			#btn2{
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				border: none;
+				position: absolute;
+				top: 293px;
+				left: 155px;
+				background-color: orangered;
+				color: navajowhite;
+				font-size: 20px;
+			}
+			#pointer{
+				position: absolute;
+				top: 231px;
+				left: 154px;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="top1">
+			<a href="shop.html"><img id="logo" src="http://39.106.45.38/static/img/logo.7515715.svg" /></a>
+			<a id="shoucang2" href="collection.html">
+			<div id="shoucang">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E6%94%B6%E8%97%8F2.svg" />
+				<span>我的收藏</span>
+			</div>
+			</a>
+			<div id="gouwuche">
+				<img src="http://pp088bwpq.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6.svg" />
+				<span>购物车</span>
+			</div>
+		</div>
+		<div id="top2">
+			<img id="img1" src="http://pp088bwpq.bkt.clouddn.com/%E8%8F%9C%E5%8D%95.svg"/>
+			<span>手机品牌</span>
+			<a href="register.html"><span>注册</span></a>
+			<a href="login.html"><span>登录</span></a>
+		</div>
+		<div id="expansion">
+			<div class="titleEx">
+				<span>小米手机</span>
+			</div>
+			<div class="titleEx">
+				<span>华为手机</span>
+			</div>
+			<div class="titleEx">
+				<span>VIVO手机</span>
+			</div>
+			<div class="titleEx">
+				<span>苹果手机</span>
+			</div>
+		</div>
+		<div id="back">
+			<a href="shop.html"><img id="img2" src="http://pp088bwpq.bkt.clouddn.com/zuojiantou.svg"/></a>
+		</div>
+		<div id="ticketwheel">
+			<div id="wheel">
+				<img src="http://pp088bwpq.bkt.clouddn.com/wheel.jpg"/>
+			</div>
+		</div>
+		<button id="btn2">GO!</button>
+		<img id="pointer" src="http://pp088bwpq.bkt.clouddn.com/%E4%B8%8A--%E9%95%BF%E7%AE%AD%E5%A4%B4.svg"/>
+		<script>
+			$(function(){
+				$("#img1").click(function(){
+					$("#expansion").toggle()
+				})
+			})
+			$(function(){
+				$("#btn2").click(function(){
+					$("#wheel").addClass("circle")
+				})
+			})
+			$(function(){
+				$("#ticketwheel").click(function(){
+					$("#wheel").removeClass("circle")
+//					alert("恭喜您获得XX元优惠！")
+				})
+			})
+		</script>
+	
+	</body>
+</html>
